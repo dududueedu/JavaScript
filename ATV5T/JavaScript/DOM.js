@@ -1,4 +1,4 @@
-let div_p = document.getElementById("div-principal")
+let div_p = document.getElementById("id-div")
 console.log(div_p)
 
 let divs = document.getElementsByTagName("div")
