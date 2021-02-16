@@ -16,3 +16,9 @@ meuspan.classList.add("fundo-yellow", "fonte-grande")
 meuspan.classList.remove("fonte-grande")
 meuspan.classList.toggle("fundo-yellow")
 meuspan.classList.toggle("fundo-yellow")
+
+//Eventos HTML
+let botao = document.querySelector(".my-button")
+botao.addEventListener("click", function(){
+    botao.classList.toggle("fundo-yellow")
+})
