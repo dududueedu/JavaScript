@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navegador{
+    background-color: azure;
+}
+.navegador .menu{
+    display: flex;
+    flex-direction: column;
+    height: 0px;
+    padding: 0px;
+    overflow: hidden;
+    transition: height 770ms;
+}
+.navegador .menu .links {
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    padding: 5px;
+    padding-left: 20px;
+}
+.navegador .menu .links:hover{
+    background-color: turquoise;
+}     
+.navegador .menu.active{
+    height: 82px;
+}
+
+.navegador .nav-cabecalho{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.navegador .nav-cabecalho .meu-botao{
+    margin-left: auto;
+    padding: 10px 20px;
+    border: 2px solid rgb(160, 137, 137);
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+}
