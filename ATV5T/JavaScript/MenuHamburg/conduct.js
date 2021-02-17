@@ -1,4 +1,4 @@
-//comportamento
+//comportamento JavaScript
 let botao = document.querySelector(" .navegador .nav-cabecalho .meu-botao")
 console.log(botao)
 
