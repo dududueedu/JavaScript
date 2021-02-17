@@ -7,6 +7,9 @@ body{
 }
 .navegador{
     background-color: azure;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 .navegador .menu{
     display: flex;
@@ -19,14 +22,14 @@ body{
     background-color: rgba(240, 255, 255, 0.404);
     width: 100%;
 }
-.navegador .menu .links {
+.navegador .menu .links, .nav-esquerdo .links{
     text-decoration: none;
     color: black;
     align-items: center;
     padding: 5px;
     padding-left: 20px;
 }
-.navegador .menu .links:hover{
+.navegador .menu .links:hover, .nav-esquerdo .links:hover {
     background-color: rgb(160, 137, 137);
 }     
 .navegador .menu.active{
@@ -44,4 +47,31 @@ body{
     border-radius: 50px;
     outline: none;
     cursor: pointer;
+}
+.nav-esquerdo{
+    display: none;
+}
+/*responsivo*/
+@media screen and (min-width: 768px){
+    .navegador .nav-cabecalho .meu-botao{
+        display: none;
+    }
+
+    .navegador .menu{
+        display: none;
+    }
+    .nav-esquerdo{
+        position: fixed;
+        display: flex;
+        left: 0;
+        height: calc(100vh - 61px);
+        background-color: azure;
+        width: 30%;
+        bottom: 0;
+        flex-direction: column;
+    }
+
+    .conteudo{
+        margin-left: 30%;
+    }
 }
