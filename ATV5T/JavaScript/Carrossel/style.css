@@ -9,15 +9,19 @@ body{
 }
 
 .carrossel .imagens{
+    display: none;
+}
+.carrossel .imagens.active{
     display: block;
 }
 
 .carrossel{
+    margin-top: calc(100vw - 90vw);
     position: relative;
 }
 .carrossel .seta-esquerda{
     font-size: 40px;
-    color: red;
+    color: yellow;
     left: 0px;
     position: absolute;
     top: 50%;
@@ -25,10 +29,12 @@ body{
     background-color: rgba(0, 0, 0, 0.384);
     padding: 3px 15px;
     border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    user-select: none;
 }
 .carrossel .seta-direita{
     font-size: 40px;
-    color: red;
+    color: yellow;
     right: 0px;
     position: absolute;
     top: 50%;
@@ -36,4 +42,27 @@ body{
     background-color: rgba(0, 0, 0, 0.384);
     padding: 3px 15px;
     border-radius: 10px 0 0 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.indicators .indicador{
+    height: 3px;
+    width: 30px;
+    background-color: rgb(255, 255, 255, .6);
+    border-radius: 2px;
+}
+
+.indicators{
+    display: flex;
+    width: 160px;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.indicators .indicador.active{
+    background-color: white;
 }
