@@ -84,9 +84,19 @@
 .overlay_modal .container_modal .footer .botao_modal.botao_blue{
     background-color: #0062cc;
 }
+.container {
+    padding: 8px;
+}
+
 
 .open_modal{
+    cursor: pointer;
+    background-color: black;
+    color: blanchedalmond;
     margin: 50px;
+    padding: 6px;
+    border-radius: 9px;
+    outline: none;
 }
 
 @keyframes aparecer{

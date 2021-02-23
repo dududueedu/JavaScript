@@ -20,3 +20,11 @@ botaoX.addEventListener("click", function(){
 window.addEventListener("click", function(event){
     if(event.target == overlayModal) overlayModal.classList.remove("active")
 })
+
+//CRIANDO NÓS
+let h3 = document.createElement("h3")
+let container = document.querySelector(".container")
+container.appendChild(h3)
+
+let text = document.createTextNode("Meu outro Título! <3")
+h3.appendChild(text)
