@@ -22,9 +22,13 @@ window.addEventListener("click", function(event){
 })
 
 //CRIANDO NÓS
-let h3 = document.createElement("h3")
+let buttonadd = document.querySelector(".button_add")
 let container = document.querySelector(".container")
-container.appendChild(h3)
 
-let text = document.createTextNode("Meu outro Título! <3")
-h3.appendChild(text)
+buttonadd.addEventListener("click", function(){
+    let h3 = document.createElement("h3")
+    container.appendChild(h3)
+    
+    let text = document.createTextNode("Meu outro Título! <3")
+    h3.appendChild(text)
+})
