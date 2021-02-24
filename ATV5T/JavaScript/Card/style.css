@@ -2,20 +2,40 @@
     padding: 0;
     margin: 0;
 }
+
+body{
+    position: relative;
+    background-color: lavenderblush;
+}
 .card{
     width: 180px;
     padding: 10px;
     background-color: rgba(0, 255, 64, 0.616);
-    border-radius: 3px;
+    border-radius: 10px;
     margin: 10px 10px;
     user-select: none;
+    border: solid 2px cornflowerblue;
 }
 .mural{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    position: absolute;
+    top: 40px;
 }
 
 .form{
     padding: 10px;
+    background-color: cornflowerblue;
+    position: absolute;
+    height: 20px;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    user-select: none;
+}
+
+.form .botao_submit{
+    border-radius: 7px;
+    padding: 3px;
+    outline: none;
 }
