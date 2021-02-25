@@ -26,3 +26,4 @@ botao_sumit.addEventListener("click", function(event){
     p.appendChild(mensagem)
     card.appendChild(p)
 })
+
